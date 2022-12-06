@@ -11,5 +11,6 @@ defmodule SchedulingAppApi.Repo.Migrations.CreateUsers do
 
       timestamps()
     end
+    createe(unique_index(:users, [:email]))
   end
 end
