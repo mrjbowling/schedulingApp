@@ -8,6 +8,14 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+# terminal command example
+ * iex -S mix
+ * alias SchedulingAppApi.Repo
+ * alias SchedulingAppApi.Accounts.User
+ *  x = User.changeset(%User{}, %{first_name: "Harry", last_name: "Potter", email: "Harry@potter.com", password: "testing", password_confirmation: "testing"})
+ * Repo.insert(x)
+
+
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
