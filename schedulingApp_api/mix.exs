@@ -49,7 +49,9 @@ defmodule SchedulingAppApi.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:argon2_elixir, "~> 3.0"}
+      {:argon2_elixir, "~> 3.0"},
+      {:absinthe, "~> 1.7.0"},
+      {:absinthe_plug, "~> 1.4"}
     ]
   end
 

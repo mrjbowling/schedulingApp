@@ -15,6 +15,25 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
  *  x = User.changeset(%User{}, %{first_name: "Harry", last_name: "Potter", email: "Harry@potter.com", password: "testing", password_confirmation: "testing"})
  * Repo.insert(x)
 
+ # graphql example
+  *  mix phx.server
+  * go to http://localhost:4000/graphiql
+  * search 
+  {
+  users {
+    id
+    firstName
+    lastName
+    role
+  }
+}
+* create new user
+mutation {
+  registerUser(input: {email:"test@test.com", firstName:"tester", lastName:"test", password:"", passwordConfirmation:"" }) {
+    id
+  }
+}
+
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
