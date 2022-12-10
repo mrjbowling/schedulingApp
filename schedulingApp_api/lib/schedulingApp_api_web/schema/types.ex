@@ -4,4 +4,5 @@ defmodule SchedulingAppApiWeb.Schema.Types do
   alias SchedulingAppApiWeb.Schema.Types
 
   import_types(Types.Usertype)
+  import_types(Types.SessionType)
 end
