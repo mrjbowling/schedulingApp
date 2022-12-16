@@ -12,6 +12,7 @@ defmodule SchedulingAppApiWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug(SchedulingAppApiWeb.Plug.Context)
   end
 
   scope "/", SchedulingAppApiWeb do
