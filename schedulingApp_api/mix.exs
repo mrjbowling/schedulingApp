@@ -7,7 +7,6 @@ defmodule SchedulingAppApi.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: [:gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
@@ -52,7 +51,8 @@ defmodule SchedulingAppApi.MixProject do
       {:argon2_elixir, "~> 3.0"},
       {:absinthe, "~> 1.7.0"},
       {:absinthe_plug, "~> 1.4"},
-      {:guardian, "~> 2.0"}
+      {:guardian, "~> 2.0"},
+      {:dataloader, "~> 1.0.0"}
     ]
   end
 
